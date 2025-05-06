@@ -1,26 +1,14 @@
 #!/bin/bash
-
-# Taking marks input from user
 echo "Enter marks for Operating Systems (OS): "
 read os
-
-echo "Enter marks for Engineering Mathematics 3 (EM3): "
-read em3
-
+echo "Enter marks for Engineering Mathematics 3 (M3): "
+read m3
 echo "Enter marks for Data Structures (DS): "
 read ds
-
-# Calculating total
-total=$((os + em3 + ds))
-
-# Calculating percentage
+total=$((os + m3 + ds))
 percentage=$((total / 3))
-
-# Display total and percentage
 echo "Total Marks = $total"
 echo "Percentage = $percentage%"
-
-# Determining class
 if [ $percentage -ge 75 ]; then
     echo "Result: PASS with DISTINCTION"
 elif [ $percentage -ge 60 ] && [ $percentage -le 74 ]; then

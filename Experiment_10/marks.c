@@ -1,12 +1,10 @@
 #!/bin/bash
 echo "Enter marks for Operating Systems (OS): "
 read os
-echo "Enter marks for Engineering Mathematics 3 (M3): "
-read m3
 echo "Enter marks for Data Structures (DS): "
 read ds
-total=$((os + m3 + ds))
-percentage=$((total / 3))
+total=$((os + ds))
+percentage=$((total / 2))
 echo "Total Marks = $total"
 echo "Percentage = $percentage%"
 if [ $percentage -ge 75 ]; then
